@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité - Treeatcore Recover</title>
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#111827;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --line:rgba(255,255,255,.10);
+      --accent:#d4a847;
+      --accent2:#e6c06e;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(212,168,71,.18), transparent 55%),
+                  radial-gradient(900px 500px at 100% 10%, rgba(230,192,110,.14), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      -webkit-text-size-adjust: 100%;
+      text-rendering: optimizeLegibility;
+    }
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 16px 64px;
+    }
+    header{
+      padding: 18px 18px 14px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(17,24,39,.85), rgba(17,24,39,.55));
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+    h1{
+      margin:0 0 6px;
+      font-size: clamp(24px, 2.6vw, 34px);
+      letter-spacing:.2px;
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+    }
+    .badge-row{
+      margin-top: 10px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+    }
+    .badge{
+      font-size: 12px;
+      color: rgba(255,255,255,.92);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      padding: 6px 10px;
+      border-radius: 999px;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+    }
+    main{
+      margin-top: 16px;
+      display: grid;
+      gap: 14px;
+    }
+    section{
+      border:1px solid var(--line);
+      background: rgba(17,24,39,.55);
+      border-radius: 16px;
+      padding: 16px 18px;
+      box-shadow: 0 8px 22px rgba(0,0,0,.22);
+      overflow: hidden;
+    }
+    h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      overflow-wrap: anywhere;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 3px rgba(212,168,71,.12);
+      flex:0 0 auto;
+    }
+    h3{
+      margin: 14px 0 8px;
+      font-size: 15px;
+      color: rgba(255,255,255,.95);
+      overflow-wrap: anywhere;
+    }
+    p{
+      margin: 8px 0;
+      color: rgba(229,231,235,.95);
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    ul{
+      margin: 8px 0 0;
+      padding-left: 18px;
+      color: rgba(229,231,235,.95);
+    }
+    li{
+      margin: 6px 0;
+      overflow-wrap: anywhere;
+    }
+    a{
+      color: var(--accent);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    a:hover{text-decoration: underline}
+    .callout{
+      border:1px solid rgba(212,168,71,.25);
+      background: rgba(212,168,71,.10);
+      padding: 12px 12px;
+      border-radius: 14px;
+      color: rgba(255,255,255,.95);
+      margin-top: 10px;
+      overflow-wrap: anywhere;
+    }
+    .grid{
+      display:grid;
+      gap:10px;
+    }
+    .table-wrap{
+      width:100%;
+      overflow-x:auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      margin-top: 10px;
+      background: rgba(255,255,255,.02);
+    }
+    .table{
+      width:100%;
+      border-collapse: collapse;
+      min-width: 720px;
+    }
+    .table th, .table td{
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align:left;
+      font-size: 14px;
+      overflow-wrap: anywhere;
+      word-break: normal;
+    }
+    .table th{
+      color: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.06);
+      font-weight: 600;
+    }
+    .table tr:last-child td{border-bottom:none}
+    footer{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      padding-top: 10px;
+      overflow-wrap: anywhere;
+    }
+    code{
+      background: rgba(255,255,255,.08);
+      border:1px solid var(--line);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      color: rgba(255,255,255,.92);
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    @media (max-width: 640px){
+      .wrap{padding: 20px 12px 56px}
+      header{padding: 16px 14px 12px}
+      section{padding: 14px 14px}
+      h2{font-size: 16px}
+      h3{font-size: 14px}
+      .badge-row{gap:6px}
+      .badge{padding: 5px 9px}
+      ul{padding-left: 16px}
+      .table-wrap{border-radius: 12px}
+    }
+    @media (max-width: 380px){
+      .wrap{padding: 18px 10px 52px}
+      header{border-radius: 14px}
+      section{border-radius: 14px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Politique de confidentialité</h1>
+      <p class="sub"><strong>Treeatcore Recover</strong> — En vigueur au <strong>06/04/2026</strong></p>
+    </header>
+
+    <main>
+      <section>
+        <h2><span class="dot"></span>1. Responsable du traitement</h2>
+        <p>
+          Le responsable du traitement est <strong>Kropfitsch Thomas</strong> (micro-entreprise),
+          situé à <strong>6 RUE d'Armaillé, 75017 Paris, France</strong>.
+        </p>
+        <p>Contact : <a href="mailto:contact.treeatcore@gmail.com">contact.treeatcore@gmail.com</a></p>
+
+        <div class="callout">
+          <strong>Important :</strong> Treeatcore Recover est une application de récupération de fichiers supprimés
+          (photos, vidéos, fichiers audio). L'ensemble du traitement s'effectue <strong>exclusivement sur votre appareil</strong>.
+          Aucune image, vidéo ou fichier scanné n'est envoyé sur un serveur ou partagé avec un tiers.
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>2. Données traitées</h2>
+
+        <h3>2.1 Fichiers scannés et récupérés</h3>
+        <p>
+          L'application analyse le stockage de votre appareil pour rechercher des fichiers supprimés (photos, vidéos, fichiers audio).
+          Ce traitement est <strong>intégralement local</strong> : aucun fichier, miniature, métadonnée ou chemin de fichier
+          ne quitte votre appareil. Les données de scan (miniatures temporaires, métadonnées) sont automatiquement supprimées
+          lorsque vous quittez l'écran de résultats.
+        </p>
+        <p>
+          Les fichiers récupérés sont enregistrés dans le dossier <code>Pictures/TreeatcoreRecovered</code> de votre appareil
+          et restent sous votre contrôle exclusif.
+        </p>
+
+        <h3>2.2 Données liées à la publicité (Google Mobile Ads / AdMob)</h3>
+        <p>
+          Lorsque l'application affiche des publicités, des données techniques peuvent être traitées par les services publicitaires,
+          telles que : identifiants publicitaires (Advertising ID), informations de l'appareil, adresse IP, données de performance des annonces,
+          interactions avec les annonces, et signaux nécessaires à la lutte contre la fraude.
+        </p>
+
+        <h3>2.3 Données liées au consentement (UMP)</h3>
+        <p>
+          Pour respecter la réglementation (notamment en Europe), l'application utilise un module de gestion du consentement.
+          Cela implique le traitement du <em>statut</em> et des <em>choix</em> de consentement (par exemple via une "chaîne de consentement"/TC string)
+          afin de déterminer si des publicités peuvent être demandées, et si elles doivent être personnalisées ou non.
+        </p>
+
+        <h3>2.4 Données liées aux abonnements (RevenueCat + Stores)</h3>
+        <p>
+          Si vous souscrivez un abonnement Premium, l'achat est géré par la plateforme (Google Play Store).
+          L'application utilise <strong>RevenueCat</strong> pour vérifier votre statut d'abonnement et débloquer le contenu Premium
+          (récupération illimitée, suppression des publicités).
+          RevenueCat peut traiter des informations de type <em>achats/abonnements</em> et des identifiants techniques nécessaires au fonctionnement du service.
+        </p>
+
+        <h3>2.5 Permissions d'accès au stockage</h3>
+        <p>
+          L'application demande l'accès au stockage de votre appareil (<code>MANAGE_EXTERNAL_STORAGE</code> sur Android 11+,
+          <code>READ_EXTERNAL_STORAGE</code> sur les versions antérieures) exclusivement pour scanner et récupérer
+          les fichiers supprimés. Cet accès est utilisé <strong>uniquement en local</strong> et ne sert en aucun cas
+          à transférer, copier ou partager vos fichiers vers l'extérieur.
+        </p>
+
+        <h3>2.6 Support</h3>
+        <p>
+          Si vous contactez le support par e-mail, nous traitons les informations que vous choisissez de nous transmettre (ex. adresse e-mail, contenu du message),
+          uniquement pour répondre à votre demande.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>3. Finalités et bases légales</h2>
+
+        <div class="table-wrap" role="region" aria-label="Finalités et bases légales (tableau défilable)" tabindex="0">
+          <table class="table" aria-label="Finalités et bases légales">
+            <thead>
+              <tr>
+                <th>Finalité</th>
+                <th>Données concernées</th>
+                <th>Base légale (RGPD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Scanner et récupérer des fichiers supprimés</td>
+                <td>Fichiers locaux (photos, vidéos, audio) — traitement 100% sur l'appareil</td>
+                <td>Exécution du service demandé par l'utilisateur</td>
+              </tr>
+              <tr>
+                <td>Afficher des publicités</td>
+                <td>Données techniques publicitaires (ID pub, IP, appareil, événements pub)</td>
+                <td>Consentement lorsque requis / intérêts légitimes selon contexte et paramétrage</td>
+              </tr>
+              <tr>
+                <td>Gérer le consentement (UMP)</td>
+                <td>Statut/choix de consentement</td>
+                <td>Obligation légale / consentement</td>
+              </tr>
+              <tr>
+                <td>Gérer les abonnements Premium</td>
+                <td>Informations d'achat/abonnement (statut, historique achat côté store)</td>
+                <td>Exécution du contrat</td>
+              </tr>
+              <tr>
+                <td>Support</td>
+                <td>Données fournies par l'utilisateur (e-mail, message)</td>
+                <td>Intérêt légitime / exécution de mesures précontractuelles</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>4. Partage des données et sous-traitants</h2>
+        <p>
+          Vos fichiers (photos, vidéos, audio) ne sont <strong>jamais partagés</strong> avec qui que ce soit.
+          Selon les fonctionnalités utilisées, certaines données techniques peuvent être traitées par des prestataires :
+        </p>
+        <ul>
+          <li><strong>Google</strong> (consentement UMP + publicités AdMob/Google Mobile Ads).</li>
+          <li><strong>RevenueCat</strong> (gestion du statut d'abonnement).</li>
+          <li><strong>Google Play Store</strong> : traitement du paiement et de la facturation (nous ne recevons pas votre numéro de carte).</li>
+        </ul>
+
+        <p class="callout">
+          Certains prestataires peuvent être situés hors de l'Union Européenne. Dans ce cas, des mécanismes de transfert conformes peuvent être utilisés
+          (ex. clauses contractuelles types), selon les politiques des prestataires.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>5. Durées de conservation</h2>
+        <ul>
+          <li><strong>Fichiers scannés (miniatures, métadonnées)</strong> : supprimés automatiquement lorsque vous quittez l'écran de résultats ou annulez le scan.</li>
+          <li><strong>Fichiers récupérés</strong> : enregistrés sur votre appareil, sous votre contrôle. Vous pouvez les supprimer à tout moment.</li>
+          <li><strong>Consentement publicitaire</strong> : conservé selon les mécanismes du module de consentement / SDK, et mis à jour lorsque vous modifiez vos choix.</li>
+          <li><strong>Abonnements</strong> : conservés le temps nécessaire à la gestion des droits Premium et obligations légales associées (côté prestataires/plateformes).</li>
+          <li><strong>Support</strong> : conservé le temps de traiter la demande, puis archivé/supprimé selon nécessité.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>6. Vos choix publicitaires et gestion du consentement</h2>
+        <p>
+          Lors du premier lancement (ou lorsque requis), une fenêtre de consentement peut apparaître.
+          Tant que le consentement n'est pas traité, l'application peut limiter ou différer l'affichage des publicités.
+        </p>
+        <p>
+          Les utilisateurs Premium (abonnés) ne voient <strong>aucune publicité</strong>.
+        </p>
+        <div class="callout">
+          <strong>Bon à savoir :</strong> si vous refusez la personnalisation, l'application peut demander des <em>publicités non personnalisées</em>
+          lorsque cela est autorisé par votre choix et la réglementation applicable.
+        </div>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>7. Sécurité</h2>
+        <p>
+          La sécurité de vos données est au centre de la conception de l'application :
+        </p>
+        <ul>
+          <li>Les fichiers scannés et récupérés ne quittent <strong>jamais</strong> votre appareil.</li>
+          <li>Les miniatures temporaires sont générées dans un cache privé de l'application et supprimées automatiquement.</li>
+          <li>Aucun historique de scan n'est conservé.</li>
+        </ul>
+        <p>
+          Les traitements liés aux publicités, au consentement et aux abonnements sont assurés par des prestataires reconnus (Google, RevenueCat).
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>8. Vos droits (RGPD)</h2>
+        <p>
+          Conformément à la réglementation, vous disposez notamment des droits suivants : accès, rectification, effacement, limitation,
+          opposition, portabilité (selon applicabilité).
+        </p>
+        <p>
+          Pour exercer vos droits : <a href="mailto:contact.treeatcore@gmail.com">contact.treeatcore@gmail.com</a>.
+          En cas de doute sur votre identité, une information complémentaire pourra être demandée pour sécuriser la demande.
+        </p>
+        <p>
+          Vous pouvez également déposer une réclamation auprès de la <a href="https://www.cnil.fr" target="_blank" rel="noreferrer">CNIL</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>9. Modification de la politique</h2>
+        <p>
+          Nous pouvons modifier cette politique afin de refléter l'évolution de l'application et rester conforme au droit en vigueur.
+          La date "En vigueur" sera mise à jour.
+        </p>
+        <p>
+          CGU & Mentions légales : <a href="https://treeatcore.github.io/treeatcore-recover-cgu/" target="_blank" rel="noreferrer">consulter la page dédiée</a>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; Treeatcore Recover — Politique de confidentialité
+    </footer>
+  </div>
+</body>
+</html>
