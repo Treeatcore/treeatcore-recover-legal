@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CGU & Mentions légales — Treeatcore Recover</title>
+
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#111827;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --line:rgba(255,255,255,.10);
+      --accent:#d4a847;
+      --accent2:#e6c06e;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+
+    html, body{width:100%; overflow-x:hidden}
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 10% 0%, rgba(212,168,71,.18), transparent 55%),
+                  radial-gradient(900px 500px at 100% 10%, rgba(230,192,110,.14), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    .wrap{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 16px 64px;
+    }
+
+    header{
+      padding: 18px 18px 14px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(17,24,39,.85), rgba(17,24,39,.55));
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+    h1{
+      margin:0 0 6px;
+      font-size: clamp(22px, 2.6vw, 34px);
+      letter-spacing:.2px;
+    }
+    .sub{
+      margin:0;
+      color:var(--muted);
+      font-size: 14px;
+    }
+
+    main{
+      margin-top: 16px;
+      display: grid;
+      gap: 14px;
+    }
+
+    section{
+      border:1px solid var(--line);
+      background: rgba(17,24,39,.55);
+      border-radius: 16px;
+      padding: 16px 18px;
+      box-shadow: 0 8px 22px rgba(0,0,0,.22);
+      min-width: 0;
+    }
+
+    h2{
+      margin: 0 0 10px;
+      font-size: 18px;
+      display:flex;
+      align-items:flex-start;
+      gap:10px;
+    }
+    .dot{
+      width:10px;height:10px;border-radius:999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 0 0 3px rgba(212,168,71,.12);
+      flex:0 0 auto;
+      margin-top: 7px;
+    }
+    h3{
+      margin: 14px 0 8px;
+      font-size: 15px;
+      color: rgba(255,255,255,.95);
+    }
+
+    p{margin: 8px 0; color: rgba(229,231,235,.95)}
+    ul{margin: 8px 0 0; padding-left: 18px; color: rgba(229,231,235,.95)}
+    li{margin: 6px 0}
+
+    a{
+      color: var(--accent);
+      text-decoration: none;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    a:hover{text-decoration: underline}
+
+    .callout{
+      border:1px solid rgba(212,168,71,.25);
+      background: rgba(212,168,71,.10);
+      padding: 12px 12px;
+      border-radius: 14px;
+      color: rgba(255,255,255,.95);
+      margin-top: 10px;
+    }
+
+    .table-wrap{
+      margin-top: 10px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .table-scroll{
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      background: rgba(17,24,39,.35);
+    }
+    .table{
+      width:100%;
+      min-width: 520px;
+      border-collapse: collapse;
+    }
+    .table th, .table td{
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+      text-align:left;
+      font-size: 14px;
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+    .table th{
+      color: rgba(255,255,255,.92);
+      background: rgba(255,255,255,.06);
+      font-weight: 600;
+      white-space: normal;
+    }
+    .table tr:last-child td{border-bottom:none}
+
+    .note{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      padding: 12px 12px;
+      border-radius: 14px;
+      color: rgba(229,231,235,.92);
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    footer{
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    code{
+      background: rgba(255,255,255,.08);
+      border:1px solid var(--line);
+      padding: 2px 6px;
+      border-radius: 8px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 12px;
+      color: rgba(255,255,255,.92);
+      word-break: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 640px){
+      .wrap{padding: 18px 12px 56px}
+      header{padding: 16px 14px 12px}
+      section{padding: 14px 14px}
+      h2{font-size: 16px}
+      h3{font-size: 14px}
+      .sub{font-size: 13px}
+      ul{padding-left: 18px}
+    }
+
+    @media (max-width: 380px){
+      h1{font-size: 20px}
+      .table{min-width: 480px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Conditions Générales d'Utilisation (CGU) & Mentions légales</h1>
+      <p class="sub"><strong>Treeatcore Recover</strong> — En vigueur au <strong>06/04/2026</strong></p>
+    </header>
+
+    <main>
+      <section>
+        <h2><span class="dot"></span>1. Conditions Générales d'Utilisation</h2>
+
+        <h3>1.1 Objet</h3>
+        <p>
+          Les présentes CGU ont pour objet de définir les conditions d'accès et d'utilisation de l'application
+          <strong>Treeatcore Recover</strong> (ci-après « l'Application ») et de ses services.
+        </p>
+
+        <h3>1.2 Acceptation</h3>
+        <p>
+          L'utilisation de l'Application implique l'acceptation des présentes CGU. L'Utilisateur est invité à les consulter
+          régulièrement, l'Éditeur pouvant les faire évoluer.
+        </p>
+
+        <h3>1.3 Services proposés</h3>
+        <p>L'Application propose notamment :</p>
+        <ul>
+          <li>Un scan approfondi du stockage de l'appareil pour détecter les fichiers supprimés (photos, vidéos, fichiers audio).</li>
+          <li>La récupération de fichiers supprimés vers le dossier <code>Pictures/TreeatcoreRecovered</code> de l'appareil.</li>
+          <li>Un essai gratuit permettant de récupérer un fichier afin de vérifier le bon fonctionnement du service.</li>
+          <li>Un abonnement Premium donnant accès à la récupération illimitée et à la suppression des publicités.</li>
+          <li>Des publicités (personnalisées ou non selon les choix de consentement et la réglementation applicable).</li>
+        </ul>
+
+        <h3>1.4 Traitement local des données</h3>
+        <p>
+          L'ensemble du traitement (scan, analyse, récupération) s'effectue <strong>exclusivement sur l'appareil de l'Utilisateur</strong>.
+          Aucune image, vidéo, fichier audio, miniature ou métadonnée de fichier n'est envoyé sur un serveur externe
+          ou partagé avec un tiers. L'Application ne dispose d'aucun serveur ni base de données.
+        </p>
+
+        <h3>1.5 Permissions requises</h3>
+        <p>
+          Pour fonctionner, l'Application nécessite l'accès au stockage de l'appareil. Cette permission est utilisée
+          exclusivement pour scanner et récupérer les fichiers supprimés. L'Utilisateur peut révoquer cette permission
+          à tout moment depuis les paramètres de son appareil.
+        </p>
+
+        <h3>1.6 Abonnements, achats intégrés et paiement</h3>
+        <p>
+          Les abonnements et achats intégrés sont effectués via <strong>Google Play</strong>. Le paiement, la facturation,
+          la gestion du renouvellement et l'historique d'achat sont traités par Google.
+        </p>
+        <ul>
+          <li>Le renouvellement automatique et la résiliation se gèrent depuis les paramètres d'abonnement Google Play du compte de l'Utilisateur.</li>
+          <li>L'Éditeur ne stocke pas les données de carte bancaire.</li>
+        </ul>
+
+        <h3>1.7 Publicités et consentement</h3>
+        <p>
+          L'Application peut afficher des publicités. Selon la zone géographique et la réglementation applicable,
+          un choix de consentement peut être proposé afin de déterminer si les publicités peuvent être personnalisées ou non.
+          Les utilisateurs Premium (abonnés) ne voient aucune publicité.
+        </p>
+
+        <h3>1.8 Utilisation acceptable</h3>
+        <p>L'Utilisateur s'engage à utiliser l'Application de manière loyale et conforme à la loi. Il est notamment interdit de :</p>
+        <ul>
+          <li>Tenter d'entraver le bon fonctionnement de l'Application (surcharge, exploitation, contournement de sécurité).</li>
+          <li>Extraire, copier ou réutiliser le contenu de l'Application en dehors des usages autorisés.</li>
+          <li>Procéder à de la rétro-ingénierie ou tenter d'accéder au code source, sauf autorisation légale expresse.</li>
+          <li>Utiliser l'Application pour accéder à des fichiers appartenant à un tiers sans son consentement.</li>
+        </ul>
+
+        <h3>1.9 Propriété intellectuelle</h3>
+        <p>
+          L'Application, ses éléments graphiques, textes, marques, logos, algorithmes de scan et de récupération
+          sont protégés par le droit de la propriété intellectuelle.
+          Toute reproduction, représentation ou exploitation non autorisée est interdite.
+        </p>
+
+        <h3>1.10 Limitation de garantie</h3>
+        <p>
+          L'Application s'efforce de récupérer un maximum de fichiers supprimés, mais ne peut garantir la récupération
+          de l'intégralité des fichiers. Le succès de la récupération dépend de nombreux facteurs indépendants de l'Éditeur
+          (écrasement des données par le système, état du stockage, version d'Android, accès root ou non).
+        </p>
+
+        <h3>1.11 Responsabilité</h3>
+        <p>
+          L'Éditeur met en œuvre les moyens raisonnables pour assurer l'accès et le bon fonctionnement de l'Application,
+          sans garantir l'absence d'erreurs, d'interruptions ou d'anomalies. L'Utilisateur utilise l'Application sous sa responsabilité.
+        </p>
+        <p>
+          L'Éditeur ne saurait être tenu responsable des dysfonctionnements imputables à des tiers (réseau, système d'exploitation,
+          services de distribution, services externes) ou à un cas de force majeure.
+        </p>
+        <p>
+          L'Éditeur ne pourra être tenu responsable de la perte définitive de fichiers que l'Application n'aurait pas pu récupérer.
+        </p>
+
+        <h3>1.12 Données personnelles</h3>
+        <p>
+          Les informations relatives aux données personnelles et aux services tiers utilisés sont décrites dans la
+          <strong>Politique de confidentialité</strong> disponible à l'adresse suivante :
+          <a href="https://treeatcore.github.io/treeatcore-recover-privacy/" target="_blank" rel="noopener noreferrer">
+            consulter la politique de confidentialité
+          </a>
+        </p>
+
+        <h3>1.13 Réclamations et support</h3>
+        <p>
+          Pour toute question, réclamation ou demande d'assistance, l'Utilisateur peut contacter l'Éditeur :
+          <strong>contact.treeatcore@gmail.com</strong>.
+        </p>
+        <div class="note">
+          Pour faciliter le traitement, merci d'indiquer le modèle de l'appareil, la version Android, la version de l'Application
+          et une description précise du problème rencontré.
+        </div>
+
+        <h3>1.14 Droit applicable et juridiction compétente</h3>
+        <p>
+          Les présentes CGU sont soumises au droit français. En cas de litige et à défaut de résolution amiable,
+          les tribunaux français seront compétents.
+        </p>
+      </section>
+
+      <section>
+        <h2><span class="dot"></span>2. Mentions légales</h2>
+
+        <div class="table-wrap">
+          <div class="table-scroll" role="region" aria-label="Informations légales" tabindex="0">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th>Éditeur</th>
+                  <td><strong>Kropfitsch Thomas</strong> (micro-entrepreneur)</td>
+                </tr>
+                <tr>
+                  <th>SIREN</th>
+                  <td><strong>932 161 169</strong></td>
+                </tr>
+                <tr>
+                  <th>Adresse</th>
+                  <td>6 RUE d'Armaillé, 75017 Paris, France</td>
+                </tr>
+                <tr>
+                  <th>Contact</th>
+                  <td><a href="mailto:contact.treeatcore@gmail.com">contact.treeatcore@gmail.com</a></td>
+                </tr>
+                <tr>
+                  <th>Directeur de publication</th>
+                  <td>Kropfitsch Thomas</td>
+                </tr>
+                <tr>
+                  <th>Distribution</th>
+                  <td>Google Play (Google LLC), 1600 Amphitheatre Parkway, Mountain View, CA 94043, États-Unis</td>
+                </tr>
+                <tr>
+                  <th>Hébergement des pages légales</th>
+                  <td>GitHub Pages (documents accessibles via treeatcore.github.io)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h3>Accès à l'Application</h3>
+        <p>
+          L'Application est normalement accessible à tout moment. L'Éditeur peut toutefois en suspendre l'accès
+          temporairement pour maintenance, mise à jour ou amélioration, sans obligation d'information préalable.
+        </p>
+
+        <h3>Propriété intellectuelle</h3>
+        <p>
+          Toute utilisation, reproduction, diffusion ou modification de tout ou partie de l'Application sans autorisation
+          expresse de l'Éditeur est interdite et peut entraîner des poursuites conformément à la réglementation en vigueur.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; Treeatcore Recover — Kropfitsch Thomas
+    </footer>
+  </div>
+</body>
+</html>
